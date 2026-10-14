@@ -1,0 +1,32 @@
+:root{--green:#0F6B5F;--gold:#F2A93B;--ink:#16302B;--field:#F4F7F5;--page:#E6EFEC}
+.task1{font-family:'Montserrat',sans-serif;background:var(--page);color:var(--ink);min-height:100vh}
+.task1 .ticket{background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 18px 40px rgba(22,48,43,.18);max-width:900px;margin:0 auto}
+.task1 .ticket-head{background:var(--green);color:#fff;font-weight:700;font-size:1.9rem;padding:1.6rem 2.5rem}
+.task1 .ticket-body{padding:2.5rem}
+.task1 .form-label,.task1 legend{font-weight:600;font-size:.95rem;margin-bottom:.4rem}
+.task1 .form-control,.task1 .form-select,.task1 .input-group-text{background-color:var(--field);border:1px solid #d8e2de;border-radius:12px;color:var(--ink)}
+.task1 .form-control:focus,.task1 .form-select:focus{border-color:var(--green);box-shadow:0 0 0 .2rem rgba(15,107,95,.2)}
+.task1 .form-floating>label{color:#6b7d78}
+.task1 .input-group-text{background:var(--green);color:#fff;font-weight:700;border-color:var(--green);border-radius:12px 0 0 12px}
+.task1 .input-group>.form-control{border-radius:0 12px 12px 0}
+.task1 .trip .btn{border:1px solid var(--green);color:var(--green);font-weight:600;padding:.5rem 1.4rem;border-radius:0}
+.task1 .trip .btn:first-of-type{border-radius:50rem 0 0 50rem}
+.task1 .trip .btn:last-of-type{border-radius:0 50rem 50rem 0}
+.task1 .btn-check:checked+.btn,.task1 .trip .btn:hover{background:var(--green);color:#fff;border-color:var(--green)}
+.task1 .form-check-input:checked{background-color:var(--green);border-color:var(--green)}
+.task1 .form-check-input:focus,.task1 .btn-check:focus-visible+.btn{box-shadow:0 0 0 .2rem rgba(15,107,95,.3);border-color:var(--green)}
+.task1 .btn-find{background:var(--gold);border:2px solid var(--gold);color:var(--ink);font-weight:700;border-radius:50rem;padding:.7rem 1.8rem}
+.task1 .btn-find:hover{background:#e29a2c;border-color:#e29a2c;color:var(--ink)}
+.task1 .btn-clear{background:#fff;border:2px solid var(--ink);color:var(--ink);font-weight:700;border-radius:50rem;padding:.7rem 1.8rem}
+.task1 .btn-clear:hover{background:var(--ink);color:#fff}
+@media (max-width:575.98px){
+ .task1{font-size:.9rem}
+ .task1 .ticket{border-radius:22px}
+ .task1 .ticket-head{font-size:1.1rem;padding:1rem 1.1rem}
+ .task1 .ticket-body{padding:1.1rem}
+}
+
+.task2 .form-control:user-invalid,.task2 .form-select:user-invalid{border-color:#dc3545}
+.task2 .form-control:user-valid,.task2 .form-select:user-valid{border-color:#198754}
+.task2 .form-check-input:user-invalid{border-color:#dc3545}
+.task2 .field:has(:user-invalid) .invalid-feedback{display:block}
